@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Console Tricks!</title>
+    <meta charset="UTF-8">
+    <title>Console Tricks!</title>
 </head>
+
 <body>
 
-  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
 
-  <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    <script>
+        const dogs = [{
+            name: 'Snickers',
+            age: 2
+        }, {
+            name: 'hugo',
+            age: 8
+        }];
 
-    function makeGreen() {
-      const p = document.querySelector('p');
-      p.style.color = '#BADA55';
-      p.style.fontSize = '50px';
-    }
+        function makeGreen() {
+            const p = document.querySelector('p');
+            p.style.color = '#BADA55';
+            p.style.fontSize = '50px';
+        }
 
-    // Regular
+        // Regular
+        console.log('hello');
 
-    // Interpolated
+        // Interpolated
 
-    // Styled
+        // Styled
 
-    // warning!
+        // warning!
+        console.warn('warn warn warn!');
 
-    // Error :|
+        // Error :|\
+        console.error('error!!');
 
-    // Info
+        // Info
+        console.info('this is info!');
 
-    // Testing
+        // Testing
+        console.assert(1 === 1);
 
-    // clearing
+        // clearing
+        console.clear();
 
-    // Viewing DOM Elements
+        // Viewing DOM Elements
+        console.log(p);
+        console.dir(p);
 
-    // Grouping together
+        // Grouping together
+        console.group(`${dog.name}`); /*or*/
+        console.groupCollapsed(`${dog.name}`);
+        console.groupEnd(`${dog.name}`);
 
-    // counting
+        // counting
+        console.count(alex);
+        console.count(josh);
+        console.count(josh);
+        console.count(josh);
+        console.count(alex);
+        console.count(alex);
+        console.count(josh);
+        console.count(alex);
+        console.count(josh);
 
-    // timing
-
-  </script>
+        // timing
+        console.time('fetching data');
+        // tells you how long it took to perform a function
+        console.timeEnd('fetching data');
+    </script>
 </body>
+
 </html>
